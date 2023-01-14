@@ -1,6 +1,7 @@
 $color-primary: #c2ded1;
 $color-secondary: #ece5c7;
 $color-font: #354259;
+$color-miri: #ffc371;
 $color-ternary: #2c2b38;
 $color-grey-main: #969696;
 
@@ -59,14 +60,17 @@ h3 {
   top: 17rem;
   left: 5%;
 }
+h3 span {
+  color: $color-miri;
+}
 
-.heading-line {
-  color: transparent;
-  background-clip: text;
-}
-.heading-line-first {
-  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
-}
+// .heading-line {
+//   color: transparent;
+//   background-clip: text;
+// }
+// .heading-line-first {
+//   background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+// }
 
 // .img__forest {
 //   object-fit: cover;

@@ -52,13 +52,8 @@ h3 {
   left: 5%;
 }
 
-.heading-line {
-  color: transparent;
-  background-clip: text;
-}
-
-.heading-line-first {
-  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+h3 span {
+  color: #ffc371;
 }
 
 /* *********** */

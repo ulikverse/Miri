@@ -1,0 +1,24 @@
+{
+  "name": "miri",
+  "version": "1.0.0",
+  "description": "This is a website that will make your work, study, meditate, relax or chill esier! The website provide you with nice visual sound experience.",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "work",
+    "study",
+    "chill",
+    "relax",
+    "motivation"
+  ],
+  "author": "Yulii Shtel",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "parcel": "^2.8.2"
+  }
+}

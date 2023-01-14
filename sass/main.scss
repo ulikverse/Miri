@@ -1,0 +1,121 @@
+$color-primary: #c2ded1;
+$color-secondary: #ece5c7;
+$color-font: #354259;
+$color-ternary: #2c2b38;
+$color-grey-main: #969696;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  // background-color: #c2ded1;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 1000%;
+  object-fit: cover;
+  min-width: 100vw;
+  height: 100vh;
+}
+
+.heading_container {
+  position: relative;
+  // text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: $color-primary;
+}
+
+.logo {
+  position: absolute;
+  top: 6rem;
+  left: 5%;
+  width: 4rem;
+  height: 4rem;
+}
+
+h1 {
+  position: absolute;
+  top: 12rem;
+  left: 5%;
+}
+
+h3 {
+  position: absolute;
+  top: 17rem;
+  left: 5%;
+}
+
+.heading-line {
+  color: transparent;
+  background-clip: text;
+}
+.heading-line-first {
+  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+}
+
+// .img__forest {
+//   object-fit: cover;
+//   min-width: 10vw;
+//   height: 10vh;
+
+//   /* padding: 2rem; */
+//   /* border-radius: 8px; */
+// }
+
+/* *********** */
+/* ANIMATIONS */
+/* *********** */
+
+.animation-down {
+  animation-name: moveInDown;
+  animation-duration: 1s;
+}
+
+.animation-down-2 {
+  animation-name: moveInDown;
+  animation-duration: 1.3s;
+}
+
+.animation-down-3 {
+  animation-name: moveInDown;
+  animation-duration: 1.6s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
